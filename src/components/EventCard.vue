@@ -4,10 +4,9 @@
     :to="{ name: 'EventDetails', params: { id: event.id } }"
   >
     <div class="event-card">
-      <span>@{{ event.time }} on {{ event.date }}</span>
-      <h4>{{ event.title }}</h4>
-      <span>by</span>
-      <h5>{{ event.organizer.name }}</h5>
+      <h2>{{ event.id }}</h2>
+      <h3>{{ event.description }}</h3>
+      <h5>Type: {{ event.type }}</h5>
     </div>
   </router-link>
 </template>
